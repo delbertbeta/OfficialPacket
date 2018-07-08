@@ -1,0 +1,11 @@
+<!--pages/my-subscribe/my-subscribe.wxml-->
+<view>
+  <view wx:for="{{[1,2,3]}}" class='subscribe-item'>
+    <image class='official-face' src='/static/face.jpg' mode='aspectFill'></image>
+    <view class='info-container'>
+      <text class='official-name'>delbertbeta</text>
+      <text class='official-desc'>震惊！华工创造301火热开场！</text>
+    </view>
+    <text class='subscribe-status'>-</text>
+  </view>
+</view>

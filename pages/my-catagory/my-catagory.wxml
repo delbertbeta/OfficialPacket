@@ -1,0 +1,5 @@
+<!--pages/my-catagory/my-catagory.wxml-->
+  <view class='function-list'>
+    <text>未分类</text>
+    <text>我的分类</text>
+  </view>

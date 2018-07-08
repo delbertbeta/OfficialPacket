@@ -1,11 +1,4 @@
-/* pages/subscribe/subscribe.wxss */
-.top-search {
-  border-radius: 8rpx;
-  margin: 4rpx 32rpx;
-  margin-bottom: 16rpx;
-  padding: 18rpx 12rpx;
-  background-color: #eeeeee;
-}
+/* pages/my-subscribe/my-subscribe.wxss */
 
 .subscribe-item {
   display: flex;
@@ -33,13 +26,15 @@
   text-overflow: ellipsis;
 }
 
-.official-recent-title, .post-time {
+.official-desc {
   font-size: 28rpx;
   color: #bebebe;
 }
 
-.post-time {
+.subscribe-status {
   position: absolute;
   right: 48rpx;
-  top: 24rpx;
+  top: 32rpx;
+  font-weight: 700;
+  font-size: 48rpx;
 }

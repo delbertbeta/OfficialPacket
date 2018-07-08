@@ -8,7 +8,7 @@
     <image class='info-face' mode="aspectFill" src='/static/face.jpg'></image>
   </view>
   <view class='function-list'>
-    <text>我的订阅</text>
+    <text bindtap='goToMySubscribe'>我的订阅</text>
     <text>我的分类</text>
   </view>
 </view>

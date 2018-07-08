@@ -1,13 +1,15 @@
-/* pages/subscribe/subscribe.wxss */
-.top-search {
-  border-radius: 8rpx;
-  margin: 4rpx 32rpx;
-  margin-bottom: 16rpx;
-  padding: 18rpx 12rpx;
-  background-color: #eeeeee;
+/* pages/seach/search.wxss */
+
+.search-result-title {
+  display: block;
+  margin: 12rpx 48rpx;
+  /* margin-bottom: rpx; */
+  font-size: 64rpx;
+  font-weight: 700;
+  color: #666666;
 }
 
-.subscribe-item {
+.search-item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -33,13 +35,15 @@
   text-overflow: ellipsis;
 }
 
-.official-recent-title, .post-time {
+.official-desc {
   font-size: 28rpx;
   color: #bebebe;
 }
 
-.post-time {
+.subscribe-status {
   position: absolute;
   right: 48rpx;
-  top: 24rpx;
+  top: 32rpx;
+  font-weight: 700;
+  font-size: 48rpx;
 }

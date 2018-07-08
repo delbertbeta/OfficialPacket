@@ -1,2 +1,12 @@
 <!--pages/subscribe/subscribe.wxml-->
 <input class='top-search' placeholder="搜索你喜欢的公众号吧~" maxlength="20" bindconfirm="goToSearch"></input>
+<view class='subscribe-list'>
+  <view wx:for="{{[1,2,3]}}" class='subscribe-item'>
+    <image class='official-face' src='/static/face.jpg' mode='aspectFill'></image>
+    <view class='info-container'>
+      <text class='official-name'>delbertbeta</text>
+      <text class='official-recent-title'>震惊！华工创造301火热开场！</text>
+    </view>
+    <text class='post-time'>一分钟前</text>
+  </view>
+</view>

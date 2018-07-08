@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  goToMySubscribe() {
+    wx.navigateTo({
+      url: '/pages/my-subscribe/my-subscribe',
+    })
   }
 })

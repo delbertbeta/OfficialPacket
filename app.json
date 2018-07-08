@@ -1,9 +1,12 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/search/search",
     "pages/subscribe/subscribe",
     "pages/my/my",
     "pages/timeline/timeline",
-    "pages/index/index"
+    "pages/my-subscribe/my-subscribe",
+    "pages/my-catagory/my-catagory"
   ],
   "window": {
     "backgroundTextStyle": "light",
