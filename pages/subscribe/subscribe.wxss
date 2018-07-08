@@ -1,0 +1,7 @@
+/* pages/subscribe/subscribe.wxss */
+.top-search {
+  border-radius: 8rpx;
+  margin: 4rpx 16rpx;
+  padding: 18rpx 12rpx;
+  background-color: #eeeeee;
+}

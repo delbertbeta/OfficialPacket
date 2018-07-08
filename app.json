@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/subscribe/subscribe",
+    "pages/my/my",
+    "pages/timeline/timeline",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "公众口袋",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bebebe",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/timeline/timeline",
+        "text": "时间线",
+        "iconPath": "static/square-gray.png",
+        "selectedIconPath": "static/square.png"
+      },
+      {
+        "pagePath": "pages/subscribe/subscribe",
+        "text": "订阅",
+        "iconPath": "static/circle-gray.png",
+        "selectedIconPath": "static/circle.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/triangle-gray.png",
+        "selectedIconPath": "static/triangle.png"
+      }
+    ]
+  }
+}

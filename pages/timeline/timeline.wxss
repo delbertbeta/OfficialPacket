@@ -1,0 +1,103 @@
+/* pages/timeline.wxss */
+
+.classify {
+  margin: 12rpx 0;
+}
+
+.classify-scroll-view {
+  height: 80rpx;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.classify text {
+  font-size: 56rpx;
+  margin: 0 16rpx;
+  color: #bebebe;
+  display: inline-block;
+  position: relative;
+}
+
+.classify text:first-child {
+  margin-left: 48rpx;
+}
+
+.classify text:last-child {
+  margin-right: 48rpx;
+}
+
+text.selected {
+  font-weight: 700;
+  color: black;
+}
+
+.card {
+  margin: 32rpx 0;
+  box-shadow: 0 8rpx 12rpx rgba(0, 0, 0, 0.1);
+}
+
+.card:first-child {
+  margin-top: 0;
+}
+
+.card .card-title {
+  height: 120rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  border-bottom: 4rpx solid #eeeeee;
+}
+
+.card .card-title .official-face {
+  height: 72rpx;
+  width: 72rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  margin-left: 48rpx;
+}
+
+.card .card-title .official-name, .card .card-title .post-time {
+  color: #bebebe;
+  font-size: 32rpx;
+}
+
+.card .card-title .post-time {
+  position: absolute;
+  right: 48rpx;
+  top: 36rpx;
+}
+
+.card .card-content {
+  position: relative;
+  height: 480rpx;
+}
+
+.card .post-info {
+  position: absolute;
+  left: 48rpx;
+  right: 48rpx;
+  bottom: 32rpx;
+  color: white;
+  text-shadow: 0 0 8rpx rgba(0, 0, 0, 0.8);
+}
+
+.post-info .post-title {
+  font-size: 42rpx;
+  display: block;
+}
+
+.post-info .post-desc {
+  display: block;
+  margin-top: 12rpx;
+  font-size: 32rpx;
+}
+
+.card .post-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}

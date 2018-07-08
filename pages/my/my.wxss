@@ -1,0 +1,54 @@
+/* pages/my/my.wxss */
+
+.info-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40rpx 60rpx;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  color: rgb(80, 80, 80);
+  font-weight: 300;
+  font-size: 9pt;
+}
+
+.user-name {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  font-size: 16pt;
+  color: black;
+  font-weight: 700;
+}
+
+.info-face {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 8rpx;
+  box-shadow: 0 20rpx 20rpx rgba(0, 0, 0, 0.02);
+}
+
+.function-list {
+  margin: 80rpx 60rpx;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-size: 14pt;
+  font-weight: 700;
+}
+
+.function-list > text {
+  position: relative;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.function-list > text::after {
+  content: '·';
+  position: absolute;
+  right: 0;
+}

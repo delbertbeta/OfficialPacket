@@ -1,0 +1,14 @@
+<!--pages/my/my.wxml-->
+<view class='my-container'>
+  <view class='info-container'>
+    <view class='info-text'>
+      <text class='user-name'>Delbert Zou</text>
+      <text>已关注 0</text>
+    </view>
+    <image class='info-face' mode="aspectFill" src='/static/face.jpg'></image>
+  </view>
+  <view class='function-list'>
+    <text>我的订阅</text>
+    <text>我的分类</text>
+  </view>
+</view>
