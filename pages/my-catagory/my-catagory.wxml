@@ -1,5 +1,9 @@
 <!--pages/my-catagory/my-catagory.wxml-->
-  <view class='function-list'>
-    <text>未分类</text>
-    <text>我的分类</text>
-  </view>
+<view class='function-bar'>
+  <text class='plus-icon'>+</text>
+  <text class='plus-text'>新建分类</text>
+</view>
+<view class='catagory-list'>
+  <text bindlongtap='deleteCatagory'>未分类</text>
+  <text>我的分类</text>
+</view>

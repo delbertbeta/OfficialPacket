@@ -67,5 +67,10 @@ Page({
     wx.navigateTo({
       url: '/pages/my-subscribe/my-subscribe',
     })
+  },
+  goToMyCatagory() {
+    wx.navigateTo( {
+      url: '/pages/my-catagory/my-catagory'
+    })
   }
 })

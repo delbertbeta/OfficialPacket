@@ -62,5 +62,18 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  deleteCatagory(id) {
+    wx.showModal({
+      title: '提示',
+      content: '您确定要删除这个分类吗？',
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
   }
 })

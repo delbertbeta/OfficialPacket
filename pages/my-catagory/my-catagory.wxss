@@ -1,1 +1,22 @@
 /* pages/my-catagory/my-catagory.wxss */
+
+.catagory-list {
+  margin: 80rpx 60rpx;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-size: 14pt;
+  font-weight: 700;
+}
+
+.catagory-list > text {
+  position: relative;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.catagory-list > text::after {
+  content: '·';
+  position: absolute;
+  right: 0;
+}

@@ -9,6 +9,6 @@
   </view>
   <view class='function-list'>
     <text bindtap='goToMySubscribe'>我的订阅</text>
-    <text>我的分类</text>
+    <text bindtap='goToMyCatagory'>我的分类</text>
   </view>
 </view>
