@@ -26,3 +26,21 @@
 .button-hover {
   background-color: #666666;
 }
+
+.button-red {
+  height: 96rpx;
+  padding: 0 92rpx;
+  color: white;
+  font-size: 36rpx;
+  font-weight: 700;
+  transition: background-color ease 0.5s;
+  border-radius: 48rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff4c4c;
+}
+
+.button-hover-red {
+  background-color: #ff7777;
+}

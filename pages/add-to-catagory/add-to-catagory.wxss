@@ -1,0 +1,22 @@
+/* pages/add-to-catagory/add-to-catagory.wxss */
+
+.add-to-catagory-title {
+  display: block;
+  margin: 12rpx 48rpx;
+  /* margin-bottom: rpx; */
+  font-size: 64rpx;
+  font-weight: 700;
+  color: #666666;
+}
+
+.function-list {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 46rpx;
+  width: 100%;
+}
+
+.button, .button-red {
+  margin: 0 16rpx;
+}

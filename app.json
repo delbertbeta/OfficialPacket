@@ -1,13 +1,15 @@
 {
   "pages": [
-    "pages/create-catagory/create-catagory",
     "pages/index/index",
+    "pages/edit-catagory/edit-catagory",
+    "pages/create-catagory/create-catagory",
     "pages/my-catagory/my-catagory",
     "pages/search/search",
     "pages/subscribe/subscribe",
     "pages/my/my",
     "pages/timeline/timeline",
-    "pages/my-subscribe/my-subscribe"
+    "pages/my-subscribe/my-subscribe",
+    "pages/add-to-catagory/add-to-catagory"
   ],
   "window": {
     "backgroundTextStyle": "light",

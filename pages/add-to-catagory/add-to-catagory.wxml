@@ -1,0 +1,12 @@
+<!--pages/add-to-catagory/add-to-catagory.wxml-->
+
+<view>
+  <text class='add-to-catagory-title'>选择要添加的公众号</text>
+</view>
+
+<item-select-list>
+</item-select-list>
+
+<view class='function-list'>
+  <button class='button' hover-class='button-hover'>完成</button>
+</view>

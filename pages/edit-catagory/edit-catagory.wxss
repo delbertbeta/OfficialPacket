@@ -1,0 +1,30 @@
+/* pages/edit-catagory/edit-catagory.wxss */
+
+.edit-catagory-title {
+  display: block;
+  margin: 12rpx 48rpx;
+  /* margin-bottom: rpx; */
+  font-size: 64rpx;
+  font-weight: 700;
+  color: #666666;
+}
+
+.catagoryName {
+  margin: 42rpx 48rpx;
+  padding: 8rpx 12rpx;
+  border-bottom: 4rpx solid #bebebe;
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+.function-list {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 46rpx;
+  width: 100%;
+}
+
+.button, .button-red {
+  margin: 0 16rpx;
+}

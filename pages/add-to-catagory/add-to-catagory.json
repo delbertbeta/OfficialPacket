@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "item-select-list": "/components/item-select-list/item-select-list"
+  }
+}

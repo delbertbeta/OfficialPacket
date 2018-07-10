@@ -1,0 +1,15 @@
+<!--pages/edit-catagory/edit-catagory.wxml-->
+
+<view>
+  <text class='edit-catagory-title'>新闻</text>
+</view>
+<view wx:if="{{editing}}">
+  <input class='catagoryName' bindconfirm="inputName" placeholder='分类名'></input>
+</view>
+<item-select-list>
+</item-select-list>
+
+<view class='function-list'>
+  <button bindtap='goToAddToCatagory' class='button' hover-class='button-hover'>添加</button>
+  <button class='button-red' hover-class='button-hover-red'>删除</button>
+</view>
