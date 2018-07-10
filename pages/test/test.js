@@ -1,4 +1,4 @@
-// pages/create-catagory/create-catagory.js
+// pages/test/test.js
 Page({
 
   /**
@@ -62,8 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  inputName(e) {
-    console.log(e.detail.value);
   }
 })

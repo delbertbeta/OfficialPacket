@@ -1,1 +1,12 @@
 <!--pages/create-catagory/create-catagory.wxml-->
+
+<view>
+  <text class='create-catagory-title'>新建分类</text>
+</view>
+<view>
+  <input class='catagoryName' bindconfirm="inputName" placeholder='分类名'></input>
+</view>
+<item-select-list>
+</item-select-list>
+
+<button class='button' hover-class='button-hover'>创建</button>

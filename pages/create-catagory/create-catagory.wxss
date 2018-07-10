@@ -1,1 +1,25 @@
 /* pages/create-catagory/create-catagory.wxss */
+
+.create-catagory-title {
+  display: block;
+  margin: 12rpx 48rpx;
+  /* margin-bottom: rpx; */
+  font-size: 64rpx;
+  font-weight: 700;
+  color: #666666;
+}
+
+.catagoryName {
+  margin: 42rpx 48rpx;
+  padding: 8rpx 12rpx;
+  border-bottom: 4rpx solid #bebebe;
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+.button {
+  position: absolute;
+  bottom: 46rpx;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

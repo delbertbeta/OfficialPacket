@@ -8,3 +8,21 @@
   padding: 0;
   box-sizing: border-box;
 } 
+
+.button {
+  height: 96rpx;
+  padding: 0 92rpx;
+  background-color: black;
+  color: white;
+  font-size: 36rpx;
+  font-weight: 700;
+  transition: background-color ease 0.5s;
+  border-radius: 48rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-hover {
+  background-color: #666666;
+}

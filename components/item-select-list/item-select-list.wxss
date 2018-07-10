@@ -1,0 +1,38 @@
+/* components/item-select-list/item-select-list.wxss */
+
+.checkbox-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 128rpx;
+  position: relative;
+}
+
+.official-face {
+  height: 92rpx;
+  width: 92rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  margin-left: 48rpx;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-right: 48rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.official-desc {
+  font-size: 28rpx;
+  color: #bebebe;
+}
+
+.checkbox {
+  position: absolute;
+  right: 48rpx;
+  top: 32rpx;
+}
