@@ -1,7 +1,19 @@
 /* pages/my-catagory/my-catagory.wxss */
 
+.function-bar {
+  margin: 40rpx 60rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.function-bar .plus-text {
+  margin-left: 20rpx;
+  font-size: 32rpx;
+}
+
 .catagory-list {
-  margin: 80rpx 60rpx;
+  margin: 20rpx 60rpx;
   display: flex;
   flex-direction: column;
   color: black;
