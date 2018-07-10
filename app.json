@@ -9,7 +9,8 @@
     "pages/my/my",
     "pages/timeline/timeline",
     "pages/my-subscribe/my-subscribe",
-    "pages/add-to-catagory/add-to-catagory"
+    "pages/add-to-catagory/add-to-catagory",
+    "pages/official-account-detail/official-account-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

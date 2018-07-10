@@ -1,11 +1,11 @@
-// pages/subscribe/subscribe.js
+// pages/official-account-detail/official-account-detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+  
   },
 
   /**
@@ -62,16 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-
-  goToSearch (e) {
-    wx.navigateTo({
-      url: '/pages/search/search?search_key=' + e.detail.value,
-    });
-  },
-  goToOfficialAccountDetail() {
-    wx.navigateTo({
-      url: '/pages/official-account-detail/official-account-detail',
-    })
   }
 })

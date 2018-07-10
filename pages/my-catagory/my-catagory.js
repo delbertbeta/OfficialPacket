@@ -80,5 +80,10 @@ Page({
     wx.navigateTo({
       url: '/pages/create-catagory/create-catagory',
     })
+  },
+  goToEditCatagory() {
+    wx.navigateTo({
+      url: '/pages/edit-catagory/edit-catagory',
+    })
   }
 })

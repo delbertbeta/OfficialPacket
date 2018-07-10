@@ -1,0 +1,15 @@
+<!--pages/official-account-detail/official-account-detail.wxml-->
+<view wx:for="{{[1, 2, 3]}}" class='card'>
+  <view class='card-title'>
+    <image class='official-face' src='/static/face.jpg' mode='aspectFill'></image>
+    <text class='official-name'>delbertbeta</text>
+    <text class='post-time'>一分钟前</text>
+  </view>
+  <view class='card-content'>
+    <view class='post-info'>
+      <text class='post-title'>震惊！华工创造301火热开场！</text>
+      <text class='post-desc'>C10-301宿舍诸神出道成为偶像啦~~</text>
+    </view>
+    <image class='post-image' mode='aspectFill' src='/static/test-image.jpg'></image>
+  </view>
+</view>
