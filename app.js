@@ -1,21 +1,18 @@
 //app.js
+const api = require('/apis/api.js');
+
 App({
   onLaunch: function () {
     // 登录
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        wx.request({
-          url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/login',
-          data: {
-            code: res.code
-          },
-          method: 'POST',
-          dataType: 'json',
-          success: res => {
-            this.globalData.openId = res.data.openId
+        api.login(res.code, (res) => {
+          this.globalData.openId = res.openId;
+          if (this.openIdWatcher) {
+            this.openIdWatcher(res);
           }
-        })
+        });
       },
       fail: res => {
         wx.switchTab({

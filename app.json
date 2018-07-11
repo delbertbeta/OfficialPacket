@@ -10,7 +10,8 @@
     "pages/my/my",
     "pages/my-subscribe/my-subscribe",
     "pages/add-to-catagory/add-to-catagory",
-    "pages/official-account-detail/official-account-detail"
+    "pages/official-account-detail/official-account-detail",
+    "pages/browser/browser"
   ],
   "window": {
     "backgroundTextStyle": "light",

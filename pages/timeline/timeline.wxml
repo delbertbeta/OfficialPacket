@@ -1,27 +1,25 @@
 <!--pages/timeline.wxml-->
 <view class='classify'>
   <scroll-view class='classify-scroll-view' scroll-x>
-    <text class='selected'>所有</text>
-    <text>娱乐</text>
-    <text>社会</text>
-    <text>新闻</text>
-    <text>热点</text>
-    <text>科技</text>
+    <text data-index="{{0}}" class="{{selectedCatagoryIndex === 0 ? 'selected' : ''}}" bindtap="changeCatagory">所有</text>
+    <text data-index="{{index + 1}}" class="{{selectedCatagoryIndex === index + 1 ? 'selected' : ''}}" wx:for="{{catagories}}" wx:key="{{item.id}}" bindtap="changeCatagory">{{item.name}}</text>
   </scroll-view>
 </view>
-<view class='card-view'>
-  <view wx:for="{{[1, 2, 3]}}" class='card'>
-    <view class='card-title'>
-      <image class='official-face' src='/static/face.jpg' mode='aspectFill'></image>
-      <text class='official-name'>delbertbeta</text>
-      <text class='post-time'>一分钟前</text>
-    </view>
-    <view class='card-content'>
-      <view class='post-info'>
-        <text class='post-title'>震惊！华工创造301火热开场！</text>
-        <text class='post-desc'>C10-301宿舍诸神出道成为偶像啦~~</text>
+<scroll-view class='card-view-scroller' scroll-y="true" lower-threshold="50" bindscrolltolower="nextPage">
+   <view class='card-view'> 
+    <view wx:for="{{messages}}" wx:key="{{item.id}}" class='card'>
+      <view class='card-title'>
+        <image class='official-face' src='{{item.officalAccount.face}}' mode='aspectFill'></image>
+        <text class='official-name'>{{item.officalAccount.name}}</text>
+        <text class='post-time'></text>
       </view>
-      <image class='post-image' mode='aspectFill' src='/static/test-image.jpg'></image>
+      <view class='card-content' data-url='{{item.url}}' bindtap='openArticle'>
+        <view class='post-info'>
+          <text class='post-title'>{{item.title}}</text>
+          <text class='post-desc'>{{item.description}}</text>
+        </view>
+        <image class='post-image' mode='aspectFill' src='{{item.image}}'></image>
+      </view>
     </view>
-  </view>
-</view>
+   </view>
+</scroll-view>
