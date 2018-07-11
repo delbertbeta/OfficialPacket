@@ -9,8 +9,8 @@
    <view class='card-view'> 
     <view wx:for="{{messages}}" wx:key="{{item.id}}" class='card'>
       <view class='card-title'>
-        <image class='official-face' src='{{item.officalAccount.face}}' mode='aspectFill'></image>
-        <text class='official-name'>{{item.officalAccount.name}}</text>
+        <image class='official-face' src='{{item.officialAccount.face}}' mode='aspectFill'></image>
+        <text class='official-name'>{{item.officialAccount.name}}</text>
         <text class='post-time'></text>
       </view>
       <view class='card-content' data-url='{{item.url}}' bindtap='openArticle'>
