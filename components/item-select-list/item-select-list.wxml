@@ -1,12 +1,12 @@
 <!--components/item-select-list/item-select-list.wxml-->
 
 <checkbox-group bindchange="checkboxChange">
-  <view wx:for="{{[1,2,3]}}" class='checkbox-item'>
-    <image class='official-face' src='/static/face.jpg' mode='aspectFill'></image>
+  <view wx:for="{{accounts}}" class='checkbox-item' wx:key='{{item.id}}'>
+    <image class='official-face' src='{{item.face}}' mode='aspectFill'></image>
     <view class='info-container'>
-      <text class='official-name'>delbertbeta</text>
-      <text class='official-desc'>震惊！华工创造301火热开场！</text>
+      <text class='official-name'>{{item.name}}</text>
+      <text class='official-desc'>{{item.description}}</text>
     </view>
-    <checkbox class='checkbox' value='{{item}}' />
+    <checkbox class='checkbox' value='{{item.id}}' />
   </view>
 </checkbox-group>

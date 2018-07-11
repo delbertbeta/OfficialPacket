@@ -60,7 +60,7 @@ Page({
         messages: res.data
       })
     })
-    api.catagory(app.globalData.openId, res => {
+    api.catagory.catagory(app.globalData.openId, res => {
       this.setData({
         catagories: res.data
       })

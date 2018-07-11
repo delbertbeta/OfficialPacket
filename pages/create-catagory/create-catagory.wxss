@@ -23,3 +23,7 @@
   margin-left: 50%;
   transform: translateX(-50%);
 }
+
+.scroll-view {
+  height: calc(100vh - 254rpx);
+}

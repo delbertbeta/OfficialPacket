@@ -1,11 +1,17 @@
 // pages/create-catagory/create-catagory.js
+const app = getApp();
+const api = require('../../apis/api.js');
+
+let name = '';
+let list = [];
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+
   },
 
   /**
@@ -64,6 +70,17 @@ Page({
   
   },
   inputName(e) {
-    console.log(e.detail.value);
+    name = e.detail.value;
+  },
+  checkboxChange(e) {
+    list = e.detail.value;
+  },
+  create() {
+    api.catagory.addCatagory(app.globalData.openId, name, (res) => {
+      api.catagory.editCatagory(app.globalData.openId, res.id, 'add', list, (res) => {
+        wx.navigateBack();
+      })
+    });
+    
   }
 })

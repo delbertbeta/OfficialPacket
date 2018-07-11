@@ -6,7 +6,10 @@
 <view>
   <input class='catagoryName' bindconfirm="inputName" placeholder='分类名'></input>
 </view>
-<item-select-list>
-</item-select-list>
 
-<button class='button' hover-class='button-hover'>创建</button>
+<scroll-view class='scroll-view' scroll-y>
+<item-select-list bind:checkboxChange="checkboxChange">
+</item-select-list>
+</scroll-view>
+
+<button class='button' hover-class='button-hover' bindtap='create'>创建</button>
