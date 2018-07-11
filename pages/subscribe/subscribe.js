@@ -1,18 +1,38 @@
 // pages/subscribe/subscribe.js
+const app = getApp();
+const api = require('../../apis/api.js');
+
+let pageCounter = 0;
+
+let tempData = [];
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    accounts: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    api.subscribe.subscribe(app.globalData.openId, api.subscribe.orderType.recentlyPushed, res => {
+      tempData = res.data;
+      this.setData({
+        accounts: tempData.slice(0, 20 * (++pageCounter))
+      })
+    });
+  },
+
+  nextPage() {
+    if (20 * (pageCounter) < tempData.length) {
+      this.setData({
+        accounts: tempData.slice(0, 20 * (++pageCounter))
+      })
+    }
   },
 
   /**
@@ -69,9 +89,9 @@ Page({
       url: '/pages/search/search?search_key=' + e.detail.value,
     });
   },
-  goToOfficialAccountDetail() {
+  goToOfficialAccountDetail(e) {
     wx.navigateTo({
-      url: '/pages/official-account-detail/official-account-detail',
+      url: '/pages/official-account-detail/official-account-detail?account=' + e.currentTarget.dataset.account,
     })
   }
 })

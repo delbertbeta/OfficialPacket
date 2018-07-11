@@ -5,5 +5,6 @@ module.exports = {
   timeline: require('./timeline.js').timeline,
   catagory: require('./catagory.js').catagory,
   subscribe: subscribe,
-  search: require('./search.js').search
+  search: require('./search.js').search,
+  getMessage: require('./getMessage.js').getMessage
 }
