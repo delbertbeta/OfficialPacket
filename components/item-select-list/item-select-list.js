@@ -7,14 +7,14 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    accounts: Array
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    accounts: []
+    // accounts: []
   },
 
   /**
@@ -27,10 +27,10 @@ Component({
     }
   },
   attached() {
-    api.subscribe.subscribe(app.globalData.openId, api.subscribe.orderType.recentlySubscribed, res => {
-      this.setData({
-        accounts: res.data
-      })
-    });
+    // api.subscribe.subscribe(app.globalData.openId, api.subscribe.orderType.recentlySubscribed, res => {
+    //   this.setData({
+    //     accounts: res.data
+    //   })
+    // });
   }
 })

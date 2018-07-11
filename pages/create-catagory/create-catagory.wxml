@@ -8,7 +8,7 @@
 </view>
 
 <scroll-view class='scroll-view' scroll-y>
-<item-select-list bind:checkboxChange="checkboxChange">
+<item-select-list accounts="{{accounts}}" bind:checkboxChange="checkboxChange">
 </item-select-list>
 </scroll-view>
 

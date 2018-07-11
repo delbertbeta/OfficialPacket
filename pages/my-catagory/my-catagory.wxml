@@ -4,5 +4,5 @@
   <text class='plus-text'>新建分类</text>
 </view>
 <view class='catagory-list'>
-  <text bindtap='goToEditCatagory' wx:key="{{item.id}}" wx:for="{{catagories}}" bindlongpress='deleteCatagory' data-index="{{index}}" >{{item.name}}</text>
+  <text bindtap='goToEditCatagory' wx:key="{{index}}" wx:for="{{catagories}}" wx:for-index bindlongpress='deleteCatagory' data-index="{{index}}" >{{index}}</text>
 </view>

@@ -29,11 +29,31 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    api.catagory.catagory(app.globalData.openId, res => {
-      this.setData({
-        catagories: res.data
+    // api.catagory.catagory(app.globalData.openId, res => {
+    //   this.setData({
+    //     catagories: res.data
+    //   })
+    // })
+    this.initializer();
+  },
+
+  initializer: function() {
+    let obj = {};
+    api.subscribe.subscribe(app.globalData.openId, api.subscribe.orderType.catagory, res => {
+      res.data.forEach(v => {
+        v.catagory.forEach(key => {
+          if (obj[key.name]) {
+            obj[key.name].push(v);
+          } else {
+            obj[key.name] = [];
+            obj[key.name].push(v);
+          }
+        })
       })
-    })
+      this.setData({
+        catagories: obj
+      })
+    });
   },
 
   /**
@@ -76,18 +96,14 @@ Page({
     wx.showModal({
       title: '提示',
       content: '您确定要删除这个分类吗？',
-      success: function (res) {
+      success: (res) => {
         if (res.confirm) {
           api.catagory.deleteCatagory(app.globalData.openId, target.id, (res) => {
             wx.showToast({
               title: '成功',
               icon: 'success'
             })
-            api.catagory.catagory(app.globalData.openId, res => {
-              this.setData({
-                catagories: res.data
-              })
-            })
+            this.initializer();
           })
         } else if (res.cancel) {
           
@@ -100,9 +116,19 @@ Page({
       url: '/pages/create-catagory/create-catagory',
     })
   },
-  goToEditCatagory() {
+  goToEditCatagory(e) {
+    const catagoryName = e.currentTarget.dataset.index;
+    let catagory;
+    for (let key in this.data.catagories) {
+      if (this.data.catagories.hasOwnProperty(key)) {
+        if (key === catagoryName) {
+          catagory = this.data.catagories[key];
+          break;
+        }
+      }
+    }
     wx.navigateTo({
-      url: '/pages/edit-catagory/edit-catagory',
+      url: '/pages/edit-catagory/edit-catagory?catagory=' + JSON.stringify(catagory) + '&name=' + catagoryName,
     })
   }
 })
