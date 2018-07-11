@@ -2,10 +2,10 @@
 <view class='my-container'>
   <view class='info-container'>
     <view class='info-text'>
-      <text class='user-name'>Delbert Zou</text>
-      <text>已关注 0</text>
+      <text class='user-name'>{{userInfo.nickName}}</text>
+      <text>您好</text>
     </view>
-    <image class='info-face' mode="aspectFill" src='/static/face.jpg'></image>
+    <image class='info-face' mode="aspectFill" src='{{userInfo.avatarUrl}}'></image>
   </view>
   <view class='function-list'>
     <text bindtap='goToMySubscribe'>我的订阅</text>
