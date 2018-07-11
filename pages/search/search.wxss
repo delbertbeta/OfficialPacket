@@ -42,6 +42,7 @@
 
 .subscribe-status {
   position: absolute;
+  display: block;
   right: 48rpx;
   top: 32rpx;
   font-weight: 700;

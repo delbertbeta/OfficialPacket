@@ -1,12 +1,12 @@
 <!--pages/seach/search.wxml-->
 <text class='search-result-title'>搜索结果</text>
 <view>
-  <view wx:for="{{[1,2,3]}}" class='search-item'>
-    <image class='official-face' src='/static/face.jpg' mode='aspectFill'></image>
+  <view wx:for="{{officialAccountList}}" wx:key='{{item.id}}' class='search-item'>
+    <image class='official-face' src='{{item.face}}' mode='aspectFill'></image>
     <view class='info-container'>
-      <text class='official-name'>delbertbeta</text>
-      <text class='official-desc'>震惊！华工创造301火热开场！</text>
+      <text class='official-name'>{{item.name}}</text>
+      <text class='official-desc'>{{item.description}}</text>
     </view>
-    <text class='subscribe-status'>+</text>
+    <text class='subscribe-status' data-index="{{index}}" bindtap='makeOrCancel'>{{item.subscribed ? '-' : '+'}}</text>
   </view>
 </view>
