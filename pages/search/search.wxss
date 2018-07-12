@@ -23,6 +23,7 @@
   margin-right: 20rpx;
   border-radius: 50%;
   margin-left: 48rpx;
+  flex-grow: 1;
 }
 
 .info-container {
@@ -38,6 +39,9 @@
 .official-desc {
   font-size: 28rpx;
   color: #bebebe;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .subscribe-status {

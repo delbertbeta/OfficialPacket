@@ -1,12 +1,12 @@
 const orderType = {
-  catagory: 'catagory',
   recentlyPushed: 'recentlyPushed',
   recentlySubscribed: 'recentlySubscribed'
 }
 
 const subscribe = (openId, orderBy, callback) => {
   wx.request({
-    url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/subscribe',
+    // url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/subscribe',
+    url: 'http://ali.delbertbeta.cc:5000/api/v1/subscribe',
     method: 'POST',
     dataType: 'json',
     data: {
@@ -21,7 +21,8 @@ const subscribe = (openId, orderBy, callback) => {
 
 const makeSubscribe = (openId, officialAccountId, callback) => {
   wx.request({
-    url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/make-subscribe',
+    // url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/make-subscribe',
+    url: 'http://ali.delbertbeta.cc:5000/api/v1/make-subscribe',
     method: 'POST',
     dataType: 'json',
     data: {
@@ -36,7 +37,8 @@ const makeSubscribe = (openId, officialAccountId, callback) => {
 
 const cancelSubscribe = (openId, officialAccountId, callback) => {
   wx.request({
-    url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/cancel-subscribe',
+    // url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/cancel-subscribe',
+    url: 'http://ali.delbertbeta.cc:5000/api/v1/cancel-subscribe',
     method: 'POST',
     dataType: 'json',
     data: {

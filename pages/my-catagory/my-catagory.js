@@ -39,7 +39,7 @@ Page({
 
   initializer: function() {
     let obj = {};
-    api.subscribe.subscribe(app.globalData.openId, api.subscribe.orderType.catagory, res => {
+    api.subscribe.subscribe(app.globalData.openId, api.subscribe.orderType.recentlyPushed, res => {
       res.data.forEach(v => {
         v.catagory.forEach(key => {
           if (obj[key.name]) {

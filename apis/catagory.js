@@ -1,6 +1,6 @@
 const catagory = (openId, callback) => {
   wx.request({
-    url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/catagory',
+    url: 'http://ali.delbertbeta.cc:5000/api/v1/catagory',
     method: 'POST',
     dataType: 'json',
     data: {
@@ -14,7 +14,8 @@ const catagory = (openId, callback) => {
 
 const addCatagory = (openId, catagoryName, callback) => {
   wx.request({
-    url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/add-catagory',
+    // url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/add-catagory',
+    url: 'http://ali.delbertbeta.cc:5000/api/v1/add-catagory',
     method: 'POST',
     dataType: 'json',
     data: {
@@ -29,7 +30,8 @@ const addCatagory = (openId, catagoryName, callback) => {
 
 const deleteCatagory = (openId, catagoryId, callback) => {
   wx.request({
-    url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/delete-catagory',
+    // url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/delete-catagory',
+    url: 'http://ali.delbertbeta.cc/api/v1/delete-catagory',
     method: 'POST',
     dataType: 'json',
     data: {
@@ -50,7 +52,8 @@ const editCatagory = (openId, catagoryId, operationType, offcialAccounts, callba
     "officialAccounts:": offcialAccounts
   });
   wx.request({
-    url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/edit-catagory',
+    // url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/edit-catagory',
+    url: 'http://ali.delbertbeta.cc/api/v1/edit-catagory',
     method: 'POST',
     dataType: 'json',
     data: targetString,
