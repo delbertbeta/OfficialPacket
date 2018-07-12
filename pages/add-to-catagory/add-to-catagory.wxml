@@ -4,9 +4,11 @@
   <text class='add-to-catagory-title'>选择要添加的公众号</text>
 </view>
 
-<item-select-list>
+<scroll-view class='scroll-view' scroll-y>
+<item-select-list accounts="{{account}}" bind:checkboxChange="checkboxChange">
 </item-select-list>
+</scroll-view>
 
 <view class='function-list'>
-  <button class='button' hover-class='button-hover'>完成</button>
+  <button class='button' bindtap='finish' hover-class='button-hover'>完成</button>
 </view>

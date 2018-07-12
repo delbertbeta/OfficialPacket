@@ -20,3 +20,7 @@
 .button, .button-red {
   margin: 0 16rpx;
 }
+
+.scroll-view {
+  height: calc(100vh - 116rpx);
+}

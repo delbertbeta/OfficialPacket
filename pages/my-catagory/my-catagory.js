@@ -119,16 +119,22 @@ Page({
   goToEditCatagory(e) {
     const catagoryName = e.currentTarget.dataset.index;
     let catagory;
+    let catagoryId;
     for (let key in this.data.catagories) {
       if (this.data.catagories.hasOwnProperty(key)) {
         if (key === catagoryName) {
           catagory = this.data.catagories[key];
+          catagory[0].catagory.forEach(i => {
+            if (i.name === catagoryName) {
+              catagoryId = i.id;
+            }
+          })
           break;
         }
       }
     }
     wx.navigateTo({
-      url: '/pages/edit-catagory/edit-catagory?catagory=' + JSON.stringify(catagory) + '&name=' + catagoryName,
+      url: '/pages/edit-catagory/edit-catagory?catagory=' + JSON.stringify(catagory) + '&name=' + catagoryName + '&id=' + catagoryId,
     })
   }
 })

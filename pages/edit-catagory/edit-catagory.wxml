@@ -8,11 +8,11 @@
 </view>
 
 <scroll-view class='scroll-view' scroll-y>
-<item-select-list accounts="{{catagories}}" bind:checkboxChange="checkboxChange">
+<item-select-list accounts="{{catagory}}" bind:checkboxChange="checkboxChange">
 </item-select-list>
 </scroll-view>
 
 <view class='function-list'>
   <button bindtap='goToAddToCatagory' class='button' hover-class='button-hover'>添加</button>
-  <button class='button-red' hover-class='button-hover-red'>删除</button>
+  <button class='button-red' bindtap='deleteCatagory' hover-class='button-hover-red'>删除</button>
 </view>

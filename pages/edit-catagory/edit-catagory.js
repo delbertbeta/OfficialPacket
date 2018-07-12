@@ -1,17 +1,16 @@
 // pages/edit-catagory/edit-catagory.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
-    
-  },
+let selected = [];
 
+const app = getApp();
+const api = require('../../apis/api.js');
+
+Page({
   onLoad: function(option) {
     const data = JSON.parse(option.catagory);
     this.setData({
       catagory: data,
-      catagoryName: option.name
+      catagoryName: option.name,
+      catagoryId: option.id
     })
   },
 
@@ -21,21 +20,27 @@ Component({
   data: {
     editing: false,
     catagory: [],
-    catagoryName: ''
+    catagoryName: '',
+    catagoryId: ''
   },
 
-  /**
-   * 组件的方法列表
-   */
-  methods: {
-    goToAddToCatagory() {
-      wx.navigateTo({
-        url: '/pages/add-to-catagory/add-to-catagory',
-      })
-    },
-    checkboxChange(e) {
-      console.log(e);
-    }
+  goToAddToCatagory() {
+    wx.navigateTo({
+      url: '/pages/add-to-catagory/add-to-catagory?info=' + JSON.stringify({
+        catagoryId: this.data.catagoryId,
+        catagory: this.data.catagory
+      }),
+    })
   },
+
+  checkboxChange(e) {
+    selected = e.detail.value;
+  },
+
+  deleteCatagory() {
+    api.catagory.editCatagory(app.globalData.openId, this.data.catagoryId, 'delete', selected, res => {
+      wx.navigateBack();
+    })
+  }
 
 })
