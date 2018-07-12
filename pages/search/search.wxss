@@ -23,7 +23,6 @@
   margin-right: 20rpx;
   border-radius: 50%;
   margin-left: 48rpx;
-  flex-grow: 1;
 }
 
 .info-container {

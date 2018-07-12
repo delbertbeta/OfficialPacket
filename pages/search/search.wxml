@@ -2,7 +2,7 @@
 <text class='search-result-title'>搜索结果</text>
 <view>
   <view wx:for="{{officialAccountList}}" wx:key='{{item.id}}' class='search-item'>
-    <image class='official-face' src='{{"https:" + item.face}}' mode='aspectFill'></image>
+    <image class='official-face' src='{{item.face}}' mode='aspectFill'></image>
     <view class='info-container'>
       <text class='official-name'>{{item.name}}</text>
       <text class='official-desc'>{{item.description}}</text>

@@ -31,7 +31,7 @@ const addCatagory = (openId, catagoryName, callback) => {
 const deleteCatagory = (openId, catagoryId, callback) => {
   wx.request({
     // url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/delete-catagory',
-    url: 'http://ali.delbertbeta.cc/api/v1/delete-catagory',
+    url: 'http://ali.delbertbeta.cc:5000/api/v1/delete-catagory',
     method: 'POST',
     dataType: 'json',
     data: {
@@ -53,7 +53,7 @@ const editCatagory = (openId, catagoryId, operationType, offcialAccounts, callba
   });
   wx.request({
     // url: 'https://dsn.apizza.net/mock/be28017e647358c1dfe41415fd8a2ab6/edit-catagory',
-    url: 'http://ali.delbertbeta.cc/api/v1/edit-catagory',
+    url: 'http://ali.delbertbeta.cc:5000/api/v1/edit-catagory',
     method: 'POST',
     dataType: 'json',
     data: targetString,

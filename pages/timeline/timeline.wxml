@@ -5,7 +5,7 @@
     <text data-index="{{index + 1}}" class="{{selectedCatagoryIndex === index + 1 ? 'selected' : ''}}" wx:for="{{catagories}}" wx:key="{{item.id}}" bindtap="changeCatagory">{{item.name}}</text>
   </scroll-view>
 </view>
-<scroll-view class='card-view-scroller' scroll-y="true" lower-threshold="50" bindscrolltolower="nextPage">
+<scroll-view class='card-view-scroller' scroll-y="true" lower-threshold="50" >
    <view class='card-view'> 
     <view wx:for="{{messages}}" wx:key="{{item.id}}" class='card'>
       <view class='card-title'>
